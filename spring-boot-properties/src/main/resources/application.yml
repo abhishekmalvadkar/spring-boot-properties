@@ -1,0 +1,19 @@
+app:
+  customer:
+    save:
+      message: Customer saved successfully
+    default:
+      gender: M
+  code: 1001
+  cache:
+    enable: true
+  product:
+    default:
+      discount: 25.9
+
+
+
+
+
+
+
