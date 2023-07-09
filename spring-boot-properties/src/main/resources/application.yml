@@ -10,6 +10,8 @@ app:
   product:
     default:
       discount: 25.9
+  notification:
+    emails: email1@gamil.com,email2@gmail.com
 
 
 
