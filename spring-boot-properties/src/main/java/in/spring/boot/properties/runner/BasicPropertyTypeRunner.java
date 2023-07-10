@@ -9,17 +9,17 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class BasicPropertyTypeRunner implements CommandLineRunner {
 
-    @Value(value = "${app.customer.save.message}")
+    @Value(value = "${app.customer-save-message}")
     private String customerSavedMessage;
 
-    @Value(value = "${app.customer.default.gender}")
-    private Character defaultCustomerAge;
+    @Value(value = "${app.customer-default-gender}")
+    private Character defaultCustomerGender;
     @Value(value = "${app.code}")
     private Integer appCode;
-    @Value(value = "${app.cache.enable}")
+    @Value(value = "${app.cache-enable}")
     private Boolean isCacheEnabled;
 
-    @Value(value = "${app.product.default.discount}")
+    @Value(value = "${app.product-default-discount}")
     private Double productDefaultDiscount;
 
     @Override
@@ -27,7 +27,7 @@ public class BasicPropertyTypeRunner implements CommandLineRunner {
         log.info("... BasicPropertyTypeRunner ...");
 
         log.info("CUSTOMER SAVED MESSAGE : {}", customerSavedMessage);
-        log.info("DEFAULT CUSTOMER AGE : {}", defaultCustomerAge);
+        log.info("DEFAULT CUSTOMER GENDER : {}", defaultCustomerGender);
         log.info("APP CODE : {}", appCode);
         log.info("IS CACHE ENABLED : {}", isCacheEnabled);
         log.info("PRODUCT DEFAULT DISCOUNT : {}", productDefaultDiscount);

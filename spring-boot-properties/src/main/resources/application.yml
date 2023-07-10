@@ -1,17 +1,15 @@
+# Always keep only one level of nesting in your application properties names
+# and use dash(-) if you have multiple nesting or multiple words in your application
+# properties names so the advantage is that it will be easy to map with @ConfigurationProperties class
+# Otherwise you have to create inner static class inside @ConfigurationProperties class to map
+# Multiple nesting
 app:
-  customer:
-    save:
-      message: Customer saved successfully
-    default:
-      gender: M
+  customer-save-message: Customer saved successfully
+  customer-default-gender: M
   code: 1001
-  cache:
-    enable: true
-  product:
-    default:
-      discount: 25.9
-  notification:
-    emails: email1@gamil.com,email2@gmail.com
+  cache-enable: true
+  product-default-discount: 25.9
+  notification-emails: email1@gamil.com,email2@gmail.com
 
 
 

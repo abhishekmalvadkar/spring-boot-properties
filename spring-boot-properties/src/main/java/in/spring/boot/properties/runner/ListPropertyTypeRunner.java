@@ -11,7 +11,7 @@ import java.util.List;
 @Slf4j
 public class ListPropertyTypeRunner implements CommandLineRunner {
 
-    @Value(value = "${app.notification.emails}")
+    @Value(value = "${app.notification-emails}")
     private List<String> notificationEmails;
 
 
