@@ -22,7 +22,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  *        constructor based injection for your @ConfigurationProperties classes to make them immutable
  */
 //@ConfigurationPropertiesScan OR
-@EnableConfigurationProperties(value = {ApplicationPropertiesConstructorBased.class})
+@EnableConfigurationProperties(value = {ApplicationPropertiesConstructorBased.class}) // RECOMMEND
 public class SpringBootPropertiesApplication {
 
 	public static void main(String[] args) {
