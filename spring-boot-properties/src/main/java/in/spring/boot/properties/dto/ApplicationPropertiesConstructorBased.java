@@ -40,7 +40,7 @@ import java.util.List;
  *
  * OR
  *
- * STEP 3 : Use @ConfigurationPropertiesScan
+ * STEP 2 : Use @ConfigurationPropertiesScan
  * on main class
  */
 public class ApplicationPropertiesConstructorBased {
