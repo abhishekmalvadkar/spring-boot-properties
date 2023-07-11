@@ -22,7 +22,7 @@ import java.util.List;
  * Using @Component to put this into spring context
  */
 @Component
-public class ApplicationProperties {
+public class ApplicationPropertiesSetterBased {
 
     private String customerSaveMessage;
 

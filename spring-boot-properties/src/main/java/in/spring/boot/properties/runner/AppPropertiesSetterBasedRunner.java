@@ -1,6 +1,6 @@
 package in.spring.boot.properties.runner;
 
-import in.spring.boot.properties.dto.ApplicationProperties;
+import in.spring.boot.properties.dto.ApplicationPropertiesSetterBased;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 @Slf4j
-public class AppPropertiesRunner implements CommandLineRunner {
+public class AppPropertiesSetterBasedRunner implements CommandLineRunner {
 
-    private final ApplicationProperties appProps;
+    private final ApplicationPropertiesSetterBased appProps;
 
     @Override
     public void run(String... args) throws Exception {
-        log.info("... AppPropertiesRunner ...");
+        log.info("... AppPropertiesSetterBasedRunner ...");
 
         log.info("CUSTOMER SAVED MESSAGE : {}", appProps.getCustomerSaveMessage());
         log.info("DEFAULT CUSTOMER GENDER : {}", appProps.getCustomerDefaultGender());
@@ -27,6 +27,6 @@ public class AppPropertiesRunner implements CommandLineRunner {
             log.info("NOTIFICATION EMAIL : {}", notificationEmail);
         }
 
-        log.info("... AppPropertiesRunner ...");
+        log.info("... AppPropertiesSetterBasedRunner ...");
     }
 }
